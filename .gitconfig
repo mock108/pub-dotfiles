@@ -12,9 +12,9 @@
 	pl = !git pull --rebase origin $(git cb)
 	ps = !git push origin $(git cb)
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
-  who = shortlog -s --
-  save = stash save -u
-  info = !sh -c 'git-info' -    # requires https://github.com/gitbits/git-info
+	who = shortlog -s --
+	save = stash save -u
+	info = !sh -c 'git-info' -    # requires https://github.com/gitbits/git-info
 [rerere]
 	enabled = true
 [credential]
