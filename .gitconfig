@@ -1,0 +1,31 @@
+[user]
+	name = mock
+	email =  mockup.108@gmail.com
+[alias]
+	st = status
+	co = commit
+	br = branch
+	fe = fetch
+	co = checkout
+	cm = commit
+	cme = commit --allow-empty-message -m ''
+	pl = !git pull --rebase origin $(git cb)
+	ps = !git push origin $(git cb)
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
+  who = shortlog -s --
+  save = stash save -u
+  info = !sh -c 'git-info' -    # requires https://github.com/gitbits/git-info
+[rerere]
+	enabled = true
+[credential]
+	helper = store --file ~/.git_credentials
+[core]
+	edutor = /C/vim/gbim --nofork -c 'set fenc=utf-8' +1
+	safecrlf = false
+	autocrlf = false
+	ignorecase = false
+	quotepath = false
+[pull]
+	ff = only
+[color]
+	ui = true
